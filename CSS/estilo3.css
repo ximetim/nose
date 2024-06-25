@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	 box-sizing: border-box;
+}
+
+
+
+
+
+/*=== 16 px = 12 pts = 100% = 1 em ====> esta es la medida estandar de laletra en paginas web y sus equivalencias en pixeles, puntos, porcentaje y ems*/
+body {
+	font-family:  "courgetteregular", Verdana, Arial;
+	 background-color: white;
+	font-size: 2em;
+}
+
+header {
+    background-color: #5E8563;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 7px solid #5E8563;
+}
+
+.logo {
+    height:80px;
+    width: 170px;
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-button {
+    background-color: white;
+    color: #5E8563;
+    font-size: 17px; 
+    padding: 15px 20px;
+    margin-right: 20px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: white;
+    transform: scale(1.15);
+     border: none; /* Eliminar borde */
+}
+
+.nav-button:last-child {
+    margin-right: 0;
+}
+
+.nav-button:active {
+    transform: scale(0.95);
+}
+
+h1 {
+	font-family:  "courgetteregular", Verdana, Arial;
+	font-size: 45px; 
+	text-shadow: 2px 2px 2px black;
+	color: #5E8563;
+
+
+}
+
+h3 {
+    
+    font-size: 25px; 
+    color: #5E8563;
+    padding-left: 5%;
+
+
+}
+
+h4 {
+    
+    font-size: 20px; 
+    color: #5E8563;
+
+
+}
+
+h2 {
+    
+    font-size: 36px; 
+    color: #5E8563;
+     padding-left: 5%;
+
+}
+
+
+p  {
+
+ font-size: 19px;
+    color: black;
+     text-align: justify;
+     width:90%;
+     padding-left: 5%;
+
+    }
+
+ul {
+
+     list-style-type: disc;
+     margin: 20px;
+       padding-left: 5%;
+
+    }
+
+    ol {
+
+    
+     margin: 15px;
+       padding-left: 5%;
+
+    }
+
+    li {
+
+ font-size: 19px;
+    color: black;
+      margin: 5px 0;
+       margin-bottom: 15px;
+      
+    }
+
+label {
+	font-size: 45px; 
+	text-shadow: 2px 2px 2px black;
+	color: #5E8563;
+         padding-left: 5%;
+      width:90%;
+      
+
+      }
+
+      .container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    margin-right: 20px;
+    padding-left: 5%;
+}
+
+.image-container img {
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.text-container {
+    max-width: 800px;
+
+}
+
+.text-container p {
+    margin: 0;
+    color: #333;
+    font-size: 19px;
+    color: black;
+     text-align: justify;
+     width:90%;
+     
+}
+
+footer{
+	 
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E8563;
+     width: 100%;
+    padding: 20px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Sombra en el borde superior */
+    border-bottom: 7px solid #5E8563; /* Borde inferior de color */
+    position: bellow;
+    bottom: 0;
+}
+
+.footer-text {
+    flex: 1;
+    
+}
+
+.footer-image img {
+    height:80px;
+    width: 170px;
+
+}

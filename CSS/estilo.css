@@ -1,0 +1,337 @@
+*{
+	margin: 0;
+	padding: 0;
+	 box-sizing: border-box;
+}
+
+/*@font-face {
+    font-family: "cantarellregular";
+    src: url("...FONTS/cantarell/cantarell-regular-webfont.woff2") format("woff2"),
+         url("...FONTS/cantarell/cantarell-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "intro_head_rbase";
+    src: url("introheadr-base-webfont.woff2") format("woff2"),
+         url("introheadr-base-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@font-face {
+    font-family: 'tagapagsalaysay_caps_narratIt';
+    src: url('tagacni_-webfont.woff2') format('woff2'),
+         url('tagacni_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+       font-family: 'tagapagsalaysay_caps_narratIt', verdana;
+     background-color: white;
+    font-size: 2em;
+}
+
+
+
+/*=== 16 px = 12 pts = 100% = 1 em ====> esta es la medida estandar de laletra en paginas web y sus equivalencias en pixeles, puntos, porcentaje y ems*/
+
+
+header {
+    background-color: #5E8563;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 7px solid #5E8563;
+}
+
+.logo {
+    height:80px;
+    width: 170px;
+}
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-button {
+    background-color: white;
+    color: #5E8563;
+    font-size: 17px; 
+    padding: 15px 20px;
+    margin-right: 20px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: white;
+    transform: scale(1.15);
+     border: none; /* Eliminar borde */
+}
+
+.nav-button:last-child {
+    margin-right: 0;
+}
+
+.nav-button:active {
+    transform: scale(0.95);
+}
+
+h1 {
+
+   font-family: "cantarellregular", verdana;
+	font-size: 45px; 
+	text-shadow: 2px 2px 2px black;
+	color: #5E8563;
+
+
+}
+
+h4 {
+    
+    font-size: 23px; 
+    color: #5E8563;
+    padding-left: 5%;
+    }
+
+h3 {
+    
+    font-size: 20px; 
+    color: #5E8563;
+
+
+}
+
+h2 {
+    
+    font-size: 36px; 
+    color: #5E8563;
+     padding-left: 5%;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info h2 {
+    font-size: 36px;
+    color: #5E8563;
+}
+
+.info p {
+    font-size: 18px;
+    color: black;
+     text-align: justify;
+}
+
+.carousel {
+    flex: 1;
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+input[name="carousel"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-items {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-items {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-items {
+    transform: translateX(-200%);
+}
+
+
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.nav {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.nav:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+ p  {
+
+ font-size: 19px;
+    color: black;
+     text-align: justify;
+     width:90%;
+     padding-left: 5%;
+
+    }
+
+ul {
+
+     list-style-type: disc;
+     margin: 20px;
+       padding-left: 5%;
+
+    }
+
+    li {
+
+ font-size: 19px;
+    color: black;
+      margin: 5px 0;
+       margin-bottom: 15px;
+      
+    }
+
+section{
+
+ 
+      width:90%;
+      padding-left: 2%;
+
+      }
+
+     label {
+         padding-left: 5%;
+    font-size: 36px;
+    color: #5E8563;
+      width:90%;
+      
+
+      }
+
+      section#principal, aside {
+    background: #EDF6B8;
+    border-radius:0.5em;
+    display: inline-block; /*se comporta como un elemento en linea y todo lo que venga despues en bloque */
+    margin: 0.25em auto;
+    max-width: 960px; /*ancho maximo*/
+    min-height: 200px; /*altura minima dependera de la altura de nuestros contenidos*/
+    padding: 0.25em;
+    text-align: center;
+    vertical-align: top; /* alinea los elementos de manera vertical*/
+    width:65%;
+}
+
+article {
+    background: #FFE0D9;
+    border-radius:0.5em;
+    min-height: 400px;
+    padding: 0.25em;
+    font-size: 20px; 
+}
+
+img section#principal{
+    border-radius:0.5em;
+    min-height: 120px;
+    max-height: 240px;
+    padding: 0.25em;
+    width:95%;
+}
+
+ aside{
+    width: 30%;
+     font-size: 30px; 
+
+}
+
+ img aside{
+     border-radius:0.5em;
+    min-height: 60px;
+    max-height: 60px;
+    padding: 0.25em;
+    width:95%;
+}
+
+footer{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E8563;
+     width: 100%;
+    padding: 20px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Sombra en el borde superior */
+    border-bottom: 7px solid #5E8563; /* Borde inferior de color */
+     position: bellow;
+    bottom: 0;
+}
+
+.footer-text {
+    flex: 1;
+}
+
+.footer-image img {
+    height:80px;
+    width: 170px;
+
+}
